@@ -1,0 +1,308 @@
+:root {
+    --primary-color: #FFD700; /* Yellow */
+    --secondary-color: #000000; /* Black */
+    --background-color: #111111;
+    --text-color: #ffffff;
+    --card-background: #1a1a1a;
+  }
+  
+  .home {
+    padding-top: auto;
+    /* padding-top: 80px; */
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--background-color) 100%);
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .ctaButtons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .ctaButtonSecondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  
+  .ctaButtonSecondary:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+  .featuredProjects {
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .featuredProjects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+  }
+  
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projectCard {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--primary-color);
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+  }
+  
+  .projectCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .projectCard h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+  
+  .projectCard p {
+    padding: 0 1rem 1rem;
+    color: #ccc;
+  }
+  
+  .seeMoreButton {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .seeMoreButton:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .services {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .serviceCard {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--primary-color);
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+  }
+  
+  .serviceCard h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .portfolio {
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+  }
+  
+  .portfolioGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .portfolioItem {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+    border: 1px solid var(--primary-color);
+  }
+  
+  .portfolioItem:hover {
+    transform: translateY(-5px);
+  }
+  
+  .portfolioItem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .portfolioOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolioItem:hover .portfolioOverlay {
+    opacity: 1;
+  }
+  
+  .portfolioOverlay h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .portfolioOverlay p {
+    color: var(--text-color);
+  }
+  
+  .contact {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-radius: 5px;
+  }
+  
+  .submitButton {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .ctaButtons {
+      flex-direction: column;
+    }
+  
+    .projectGrid,
+    .servicesGrid,
+    .portfolioGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
